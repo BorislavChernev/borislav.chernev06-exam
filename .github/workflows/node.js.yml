@@ -59,5 +59,7 @@ jobs:
         cache: 'npm'
     - name: instal node packages    
       run: npm install
+    - name: instal; playwright libary
+      run: npx playwright install
     - name: execute ui tests
       run: npm run test:ui
